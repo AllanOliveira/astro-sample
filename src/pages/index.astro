@@ -1,5 +1,6 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
@@ -11,10 +12,8 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-		
-		<h1>Meu sitezinho show!!</h1>
+		<BaseLayout pageTitle={pageTitle}>
+			<h2>Meu sitezinho show!!</h2>
+		</BaseLayout>
 	</body>
 </html>
